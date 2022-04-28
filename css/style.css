@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+}
+.m-auto{
+    margin:auto;
+}
+
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    background-color: #015c59;
+}
+ .right ul{
+    display: flex;
+}
+ul li a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+.search{
+    margin-left: 10px;
+}
+#searchText{
+    padding:3px;
+}
+.content{
+    height: 355px;
+    background-color: rgb(146, 153, 51); 
+}
+.left {
+    width:30%;
+    margin-left: 10%;
+    
+}
+.right{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+.footer{
+    position: sticky;
+    top:100%;
+    height: 55px;
+    background-color: rgb(1, 91, 94);
+    text-align: center;
+    color:white;
+    padding-top: 20px;
+}
+.header{
+    height:5px;
+    background-color: rgb(11, 9, 82);   
+}
+.left img{
+    position: static;
+    width: 15%;
+    background-size: 100% 100%;
+}
+
+.slideShow{
+    
+    padding:0px;
+    height:100%;
+    width: 100%;
+    background-image: url("slider1.jpg");
+    background-size: 100% 100%;
+    animation: slider 9s infinite linear;
+}
+@keyframes slider{
+    0%{ background-image: url("slider1.jpg");}
+    35%{background-image: url("slider2.jpg");}
+    75%{background-image: url("slider3.jpg");}
+}
+
+.home-article{
+    display: flex;
+    flex-direction: row;
+    
+    /* background-color: aquamarine; */
+    
+}
+.home-articles{
+    width: 80%;
+    position: relative;
+}
+.home-article{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.article-content{
+    width: 40%;
+    padding: 20px;
+}
+.article-content span{
+    padding: 5px;
+    font-size:34px;
+}
+.categories{
+    position: absolute;
+    /* height: 200px; */
+    right:2px;
+    line-height: 3em;
+}
+/* Blog */
+.contentBlog{
+    height:450px;
+    position:relative;
+}
+.contentBlog1{
+    height:300px;
+    position:relative;
+}
+.contentBlog1 img{
+    width: 100%;
+    height: 100%;
+    opacity: 15px;
+}
+.contentBlog img{
+    width: 100%;
+    height: 100%;
+    opacity: 15px;
+}
+
+    .center {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+     font-size: 35px;
+     color:white;
+    }
+
+.articleblog-image{
+width: 60%;
+height: 60%;
+
+}
+.article-image{
+background-size: 100% 100%;
+    /* width: 100%; */
+}
+.article-image img{
+    background-size: 100% 100%;
+    width: 70%;
+    /* margin-left:15%; */   
+}
+.articleblog-content{
+    width: 60%;
+    height: 100%;
+   
+left: 1;}
+.blog1 p{
+    padding:20px;
+}
+.bottombloglist{
+    display:flex;
+    width:100%;
+   border:4px;
+   padding-top:20px;
+   padding-bottom:20px;
+}
+.bottomblog{
+    padding: 5px;
+    background-color: #00acc185;
+    border-style: groove;
+width: 25%;
+}
+.bottomblog img{
+   width: 100%;
+}
+#comments{
+    width:80%;
+    height: 30px;
+}
+.addcomments{
+    height: auto;
+    padding: 30px;
+    border-style: groove;
+}
+#add{
+    padding: 7px 20px 7px 20px;
+}
+
+.PopularBlogs{
+    line-height: normal;
+    margin-top: 50px ;
+}
+.PopularBlogs p a{
+    text-decoration: none;
+    color: black;
+}
+.blogcat{
+    margin-right: 40px;
+}
+#bottomblogheader{
+    padding-left: 10%;
+    padding-top: 20px;
+}
+.newsletter{
+padding-top: 30%;
+}
+.email input{
+    height: 60px;
+    width: 100%;
+}
+#addemail{
+    margin-left: 25%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0f9494;
+}
+
+.blogcatstyle p{
+    display:inline;
+    padding: 10px;
+    background-color: rgb(15, 148, 148);
+    text-align: center;
+    margin-left: 15px;
+}
+/*contact us */
+
+.contactContainer input[type=text], select, textarea {
+  width: 98%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contactContainer {
+  width: 8;border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* social media icons */
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /*pinterest*/
+  .fa-pinterest{
+    background: #cb2027;
+    color: white;
+  }

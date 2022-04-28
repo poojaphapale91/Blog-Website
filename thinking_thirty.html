@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        My First Blog Website
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link red="javascript" href="js/search.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+
+    <div class="header"></div>
+
+    <nav class="navigation m-auto">
+
+        <div class="left">
+            <a href="index.html"> <img src="img/logo.png" style="width:50px; height:50px"> </a> 
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" id="searchBlog" placeholder="Search Article" onkeyup="searchblogs()">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contentBlog m-auto max-width-1" >
+        <img src="/img/blogheader_blog2.jpg">
+        <div class="caption center">
+            Thirty & Thriving… that’s what they say.
+        <p>11th March | Ivy Blackthorn | 8 min. to read </p>
+        <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-pinterest"></a>
+        </div>
+    </div>
+
+
+    <div class="home-article">
+
+        
+
+        <div class="articleblog-content m-auto">
+            <h3>Thirty & Thriving… that’s what they say.</h3>
+
+            
+            
+            <div class="blog1">
+                <strong> When I turned 21 I wrote an article about what I had learned in my first one and twenty years.</strong>
+                
+                <p>
+                    The only part of it I really remember is an anecdote about how sitting on the floor of a train would no longer be acceptable as I was an ‘adult’ now. The anecdote came soaring back to me two days ago as I sat on the floor of a London to Manchester train wearing a brand new pair of jeans I had recently purchased from M&S. It’s nine years later, I am approaching my 30th birthday and here I am. My laughter frightened the woman opposite me who had also resorted to sitting on her suitcase but I delighted in the irony of it. Adult or not, has anything really changed?
+                </p>
+                <div class="article-image">
+                    <img src="/img/article/article2.jpg">
+                </div>
+                <p>
+                    It’s difficult to avoid the thoughts and anxieties that hover over a 29 year old head in those last few weeks of the terrible twenties. I say terrible in absolute sincerity- I have struggled through many of these months and years and as I look back on them there is a small demon within me reaching up to throw the word ‘regret’ into the limelight. Have you wasted your youth worrying too much? Have you achieved everything you could have? Didn’t you want to be able to do a push-up by now?
+                </p><p>
+                    Luckily, we’ve met on the battlefield before and I know we will again. The defence is not pretty and it’s often difficult to take. But just like Grandma always said, it might taste horrible, but it’s good for you.
+                </p>
+                <p>
+                    Turning 30 is not special. 30 is no milestone and it is not a pinnacle in your life.
+                </p>
+                <p>
+                    If you’re lining up slalom poles to hit on your way through life and using checkpoints to appraise yourself, you’re bound to be disappointed. The chances are you’re going to get to the start line and be told you’re skiing down a different slope or you’ll be halfway down and be forced to go off piste.
+                </p>
+                <p>
+                    It can be too easy to reflect on 30 years of life with the view of focusing solely on conspicuous progress- you want to see the huge jumps and distinct changes made. Inevitably they will be there, but it negates the importance of continuous progress, the constant carousel of life. You just have to keep going.
+                </p>
+                
+                
+
+            </div>
+            
+            <hr>
+            <br>
+            <div class="addcomments">
+                <p> Add comments here</p>
+                <input type="text" placeholder="Add comments here" id="comments">
+                <button id="add" onclick="add()"> Submit </button>
+                <ul id="ul">
+                    <li></li>
+                    </ul>
+            </div>
+            
+            
+        </div>
+    
+        <div class="blogcat">
+           
+            
+            <div class="PopularBlogs">
+                <h3> Popular Blogs: </h3>
+               <div class="blogcatstyle"> <p><a href="thinking_thirty.html">Health</a></p> <p> <a href="#"> Inspirational</a></p> </div>
+               <br><br>
+               <div class="blogcatstyle"> <p> <a href="change_mind.html">Fitness</a></p> </div>
+            </div>
+
+            <div class="newsletter">
+                <h3> Subscribe to our Newsletter </h3>
+                <div class="email">
+                <input type="textbox" placeholder="Enter your Email here" id="email">
+            </div>
+            <div class="email">
+                <button id="addemail" onclick="email"> Subscribe </button>
+            </div>
+            </div>
+           
+            </div>
+            
+    </div>
+
+   
+
+
+    <div id="bottomblogheader"><h3> People also like to read this:</h3> </div>
+    
+    <div class="bottombloglist m-auto">
+        
+        <div class="bottomblog">
+            <div class="article-image">
+                <img src="/img/article/article1.jpeg" > 
+            </div>
+            <div class="bottomblog-content">
+                <a href="change_mind.html"> Change your Mind Change your Life</a>
+            </div>
+        </div>
+        <div class="bottomblog">
+            <div class="article-image">
+                <img src="/img/article/article2.jpg" > 
+            </div>
+            <div class="bottomblog-content">
+                <a href="thinking_thirty.html">Thinking Thirty</a>
+            </div>
+        </div>
+        <div class="bottomblog">
+            <div class="article-image">
+                <img src="/img/article/article3.jpeg" > 
+            </div>
+            <div class="bottomblog-content">
+              <a href="#">  Books That Will Change Your Life Forever</a>
+            </div>
+        </div>
+        <div class="bottomblog">
+            <div class="article-image">
+                <img src="/img/article/article1.jpeg" > 
+            </div>
+            <div class="bottomblog-content">
+                <a href="change_mind.html">Change your Mind Change your Life</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer m-auto">
+   
+        <p>   © 2022 WebBlog </p>
+     
+     </div>
+
+
+     <script>
+         function popupmessage(){
+    alert("hello");
+}
+function add(){
+    let comment = document.getElementById("comments").value;
+   
+    if (comment === "") {
+        alert("Enter Todays task");
+    }
+    else {
+    let comment = document.createTextNode(comments.value);
+    let UL = document.getElementById("ul");
+    let LI = document.createElement("li");
+
+
+    var span =document.createElement("span");
+    var author = document.createTextNode("🚹");
+    span.appendChild(author);
+    LI.appendChild(span);
+
+LI.appendChild(comment);
+UL.appendChild(LI);
+
+
+
+    }
+    
+}
+
+
+     </script>
+
+
+</body>
+
+
+</html>

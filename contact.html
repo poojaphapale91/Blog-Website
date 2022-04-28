@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Contact Us
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link red="javascript" href="js/search.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+
+    <div class="header"></div>
+
+    <nav class="navigation m-auto">
+
+        <div class="left">
+            <a href="index.html"> <img src="img/logo.png" style="width:50px; height:50px"> </a>   
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" id="searchBlog" placeholder="Search Article" onkeyup="searchblogs()">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contentBlog1 m-auto max-width-1" >
+        <img src="/img/blogheader.jpg">
+        
+    </div>
+    
+    <div class="home-article m-auto" >
+       
+    <div class="contactContainer m-auto">
+      
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <p id="firstname" > </p>
+            
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          <p id="lastname" > </p>
+
+          <label for="phoneno">Phone Number</label>
+          <input type="text" id="phone" name="phoneNumber" placeholder="Your phone number.." required>
+          <p id="phoneno" > </p>
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">India</option>
+            <option value="canada">Japan</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" id="submit" onclick="btnSubmit()" >
+          <p id="success"> </p>
+        </form>
+      </div>
+
+
+    
+
+    </div>
+    <div class="footer m-auto">
+   
+        <p>   © 2022 WebBlog </p>
+     
+     </div>
+
+<script src="js/contact.js"></script>
+
+</body>
+
+
+</html>
